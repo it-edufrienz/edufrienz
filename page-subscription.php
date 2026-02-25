@@ -27,9 +27,11 @@ get_header();
         </div>
     </section>
     <nav class="font-valera-round" aria-label="breadcrumb">
-        <ol class="breadcrumb bg-transparent p-0 my-5" style="font-size: large;">
-        <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>" style="color: #10a9ee">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Subscription Plans</li>
+        <ol class="breadcrumb bg-transparent my-5 mx-5" style="font-size:large">
+            <li class="breadcrumb-item">
+                <a href="<?php echo home_url(); ?>" style="color:#10a9ee">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Subscription Plans</li> 
         </ol>
     </nav>
 
