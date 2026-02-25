@@ -1,0 +1,21 @@
+{
+  "name": "edufrienz",
+  "version": "1.0.0",
+  "description": "Tema WordPress modern dari Edufrienz. Dibangun dengan Bootstrap 4.6, fully responsive, dan ramah untuk website edukasi, pembelajaran online, komunitas belajar, serta blog pendidikan.",
+  "license": "ISC",
+  "author": "Hendra Sutrisno",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^31.2.0",
+    "rfs": "^10.0.0",
+    "sass": "^1.32.13"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
