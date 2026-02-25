@@ -1,0 +1,66 @@
+/* hamburger.css */
+:root {
+    --toggler-color: #8ed0fa;
+}
+
+.navbar-toggler{
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 0 0.15em 0.3em;
+    border-width: 2px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+button.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: 2px solid rgba(0, 123, 255, .25) !important;
+    outline-offset: 4px !important;
+}
+
+.navbar-toggler .navbar-toggler-inner,
+.navbar-toggler .navbar-toggler-inner::before,
+.navbar-toggler .navbar-toggler-inner::after{
+    width: 1em;
+    height: 0.16em;
+    background-color: var(--toggler-color);
+    transition: all 0.3s ease; 
+    position: absolute;
+}
+
+.navbar-toggler .navbar-toggler-inner::before{
+    content: "";
+    display: block;
+    top: -0.3em;
+}
+
+.navbar-toggler .navbar-toggler-inner::after{
+    content: "";
+    display: block;
+    bottom: -0.3em;
+}
+
+.navbar-toggler .navbar-toggler-inner{
+    transition: 0.2s;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-inner{
+    transition: 0.2s;
+    transform: rotate(405deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-inner::before{
+    top: 0;
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-inner::after{
+    bottom: 0;
+    transform: rotate(-90deg);
+}

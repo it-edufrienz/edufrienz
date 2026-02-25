@@ -1,0 +1,95 @@
+.gap-0 { gap: 0; }
+.gap-1 { gap: .25rem; }
+.gap-2 { gap: .5rem; }
+.gap-3 { gap: 1rem; }
+.gap-4 { gap: 1.5rem; }
+.gap-5 { gap: 3rem; }
+
+.btn-edufrienz {
+    color: #fff !important;
+    background-color: #8ed0fa !important;
+    border-color: #8ed0fa !important;
+}
+.btn-edufrienz:hover {
+    background-color: #015885 !important;
+}
+
+.btn-edufrienz.disabled,
+.btn-edufrienz:disabled {
+    color: #8ed0fa !important;
+    background-color: transparent;
+}
+
+.btn-edufrienz:not(:disabled):not(.disabled):active,
+.btn-edufrienz:not(:disabled):not(.disabled).active,
+.show > .btn-edufrienz.dropdown-toggle {
+    color: #fff !important;
+    background-color: #8ed0fa !important;
+    border-color: #8ed0fa !important;
+}
+
+.btn-link-edufrienz {
+    font-weight: 400;
+    color: #8ed0fa !important;
+    text-decoration: none;
+}
+
+.btn-link-edufrienz:hover {
+    text-decoration: underline;
+}
+
+.btn-link-edufrienz:focus,
+.btn-link-edufrienz.focus {
+    text-decoration: underline;
+    box-shadow: none !important;
+    outline: 2px solid rgba(0, 123, 255, .25) !important;
+    outline-offset: 4px !important; /* ini efek "padding"-nya */
+}
+
+.btn-link-edufrienz:disabled,
+.btn-link-edufrienz.disabled {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* perbaiki bentrok dengan bootstrap di halaman My Account WooCommerce */
+.woocommerce-account .col2-set .col-1,
+.woocommerce-account .col2-set .col-2 {
+    float: none !important; /* Hapus float bawaan Bootstrap */
+    width: 48% !important;   /* Kembalikan lebar WooCommerce */
+    max-width: none !important;
+    flex: none !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.woocommerce-account .col2-set .col-1 {
+    float: left !important;
+}
+
+.woocommerce-account .col2-set .col-2 {
+    float: right !important;
+}
+
+/* Untuk layar kecil (mobile) */
+@media only screen and (max-width: 768px) {
+    .woocommerce-account .col2-set .col-1,
+    .woocommerce-account .col2-set .col-2 {
+        width: 100% !important;
+        float: none !important;
+    }
+}
+
+.woocommerce-account form .form-row {
+    display: block !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.woocommerce-account a:not(.button) {
+    text-decoration: none !important;
+}
+
+.woocommerce-account a:hover {
+    text-decoration: underline !important;
+}

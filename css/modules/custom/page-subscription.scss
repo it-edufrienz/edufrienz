@@ -1,0 +1,477 @@
+.price-tag {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.price-sub {
+    font-size: 0.9rem;
+    color: #6c757d !important;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.faq-question {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #dee2e6 !important;
+    padding: 0.75rem 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.tutorial-icon {
+    font-size: 3rem;
+    color: #10A9EE !important;
+}
+
+.nav-link {
+    color: #10A9EE  !important;
+    font-weight: 500;
+    border: 1px solid #00aeff !important;
+}
+
+.nav-link:not(.active):hover {
+    color: #000 !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+}
+
+.nav-pills .nav-link.active {
+    font-weight: 600;
+    background-color: #00aeff !important;
+}
+
+.plan-card {
+    background-color: #E9FAFF !important;
+    border-radius: 16px;
+    border: 1px solid #d9f3fb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    min-height: 23rem;
+}
+
+.plan-card.premium {
+    background-color: #FFF5B4 !important;
+}
+
+.plan-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.plan-card .plan-content {
+    flex: 1 1 auto; 
+}
+
+.plan-card .btn {
+    margin-top: 0;
+}
+
+.plan-title {
+    color: #005B8A !important;
+    font-weight: 700;
+    font-family: "Fredoka One", Sans-serif;
+    font-size: xx-large;
+    text-align: left;
+}
+
+.plan-desc {
+    color: #005B8A !important;
+    font-size: larger;
+    font-family: "Varela Round", Sans-serif;
+}
+
+.plan-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.2rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00aeff !important;
+    font-family: "Fredoka One", Sans-serif;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+}
+.plan-price:has(.plan-save) {
+    font-size: 3rem;
+}
+
+.plan-price > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1;
+}
+
+.plan-date {
+    order: 1;
+    font-size: 0.3em !important;
+    line-height: 1.2;
+    color: inherit;
+    white-space: nowrap;
+    margin: 0 0 0.1em 0;
+    position: static !important;
+    top: auto !important;
+}
+
+/* Plan-save: di bawah */
+.plan-save {
+    order: 2;
+    font-size: 0.2em !important;
+    background-color: #2e7d32 !important;
+    color: white !important;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    line-height: 1.2;
+    margin: 10px 0 0 0;
+    position: static !important;
+    top: auto !important;
+}
+
+/* Responsif: ukuran font mengecil */
+@media (max-width: 1200px) {
+    .plan-price { font-size: 3rem; }
+    .plan-price:has(.plan-save){
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 992px) {
+    .plan-price { font-size: 4.5rem; }
+    .plan-price:has(.plan-save){
+        font-size: 3.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-price { 
+        font-size: 4rem;
+    }
+    .plan-price:has(.plan-save){
+        font-size: 3.2rem;
+    }
+}
+/* Tablet kecil / large phone */
+@media (max-width: 767px) {
+    .plan-price {
+        font-size: 7rem;
+    }
+
+    .plan-price:has(.plan-save){
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .plan-price { 
+        font-size: 4.2rem;
+        justify-content: center;
+    }
+    .plan-price:has(.plan-save){
+        font-size: 3.5rem;
+    }
+}
+
+.plan-card {
+    overflow: hidden;
+}
+
+.plan-price[style*="font-size"] {
+    font-size: inherit !important;
+}
+
+.plan-price-small {
+    color: #005B8A !important;
+    font-size: 2.3rem;
+    font-weight: 600;
+    font-family: "Fredoka One", Sans-serif;
+    text-align: left;
+}
+
+.plan-included {
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    padding: 15px;
+    color: #005B8A !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.plan-included i {
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.plan-included-content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #005B8A !important;
+    font-family: "Varela Round", Sans-serif;
+    background-color: #E9FAFF !important;
+}
+
+.plan-card.premium .plan-included-content {
+    background-color: #FFF5B4 !important;
+}
+
+.plan-btn {
+    background-color: #00aeff !important;
+    color: white !important;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.plan-btn:hover {
+    background-color: #0d94d4 !important;
+    color: white !important;
+}
+
+.font-valera-round {
+    font-family: "Varela Round", Sans-serif;
+}
+
+.font-fredoka-one {
+    font-family: "Fredoka One", Sans-serif;
+}
+
+.font-fredoka {
+    font-family: "Fredoka", Sans-serif;
+}
+
+#faqAccordion .card {
+    background-color: #E9FAFF !important;
+    border: none;
+}
+
+#faqAccordion .card-header {
+    background-color: #E9FAFF !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+#faqAccordion .btn-link h3 {
+    color: #005B8A !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#faqAccordion .btn-link:hover,
+#faqAccordion .btn-link:focus {
+    color: #005B8A !important;
+    text-decoration: none;
+}
+
+#faqAccordion .card-body {
+    color: #000000 !important;
+}
+
+.faq-icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f068";
+    color: #005B8A !important;
+    font-size: 18px;
+}
+
+.collapsed .faq-icon::before {
+    content: "\f067";
+}
+
+.subscription-banner {
+    background-image: var(--banner-img);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.subscription-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.subscription-banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.subscription-banner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #005B8A !important;
+}
+
+.subscription-banner p {
+    font-size: 22px;
+    color: #000 !important;
+}
+
+.section-title {
+    font-size: xxx-large;
+    font-weight: 600;
+    color: #005B8A !important;
+    font-family: "Fredoka One", Sans-serif;
+    text-align: center;
+}
+
+.rounded-more {
+    border-radius: 10px;
+}
+
+.plan-included-content ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.plan-included-content li {
+    position: relative;
+    padding-left: 2rem;
+    text-align: left;
+    margin-bottom: 0.75rem;
+    color: #005B8A !important;
+    font-family: "Varela Round", Sans-serif;
+    line-height: 1.5;
+}
+
+.plan-included-content li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #005B8A !important;
+    font-size: 1rem;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.plan-included-content li:last-child {
+    margin-bottom: 0;
+}
+
+td[colspan] {
+    background-color: #00aeff !important;
+    color: #fff !important;
+}
+.table thead {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+.table-responsive { height: 500px; }
+
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: xxx-large;
+    }
+
+    .table thead th {
+        background: #00aeff !important;
+        color: #fff !important;
+    }
+
+    table,
+    thead,
+    tbody,
+    tr,
+    td,
+    th {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        border: 1px solid #ddd !important;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        background-color: #fff !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+        border: none;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
+
+    td[colspan] {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding: 12px !important;
+        margin: -1px -1px 0 -1px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    tr:not(:first-child) td[colspan] {
+        margin-top: -1px;
+    }
+
+    td::before {
+        content: attr(data-title) ": ";
+        font-weight: 600;
+        color: #333 !important;
+        flex-shrink: 0;
+        padding-right: 10px;
+    }
+
+    td[colspan]::before {
+        content: none;
+    }
+
+    td i {
+        margin-left: auto;
+        font-size: 1.2em;
+    }
+
+    td .font-weight-bold {
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1128px) {
+    .subscription-banner {
+        background-image: var(--banner-img-mobile);
+        align-items: flex-start;
+        padding-top: 15%;
+    }
+
+    .subscription-banner .row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .subscription-banner h1 {
+        font-size: 50px;
+    }
+}

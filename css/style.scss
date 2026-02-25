@@ -1,1 +1,6 @@
 @use "modules/navbar";
+@use "modules/hamburger";
+@use "modules/general";
+
+//custom page css
+@use "modules/custom/page-subscription";

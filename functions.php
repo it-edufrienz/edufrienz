@@ -26,8 +26,8 @@ function edufrienz_scripts() {
     wp_enqueue_style('font-awesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', array(), '6.7.2', 'all');
 
 
-    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/inc/bootstrap.min.js', array( 'jquery' ), '4.6.2', true );
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap.min.css', array(), '4.6.2', 'all' );
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/inc/bootstrap.js', array( 'jquery' ), '4.6.2', true );
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap.css', array(), '4.6.2', 'all' );
 
 	wp_enqueue_style('font-awesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', array(), '6.7.2', 'all');
 
@@ -102,3 +102,19 @@ add_filter('nav_menu_css_class', function ($classes, $item, $args) {
     return $classes;
 
 }, 10, 3);
+
+
+/**
+ * Format cart count (999 → 999, 1000 → 1K, 1500 → 1.5K, 1000000 → 1M)
+ */
+function edufrienz_format_cart_count( $count ) {
+    if ( $count >= 1000000 ) {
+        return rtrim( rtrim( number_format( $count / 1000000, 1 ), '0' ), '.' ) . 'M';
+    }
+
+    if ( $count >= 1000 ) {
+        return rtrim( rtrim( number_format( $count / 1000, 1 ), '0' ), '.' ) . 'K';
+    }
+
+    return (string) $count;
+}
